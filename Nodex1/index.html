@@ -506,7 +506,6 @@ section {
   <!-- Hero with Globe Animation-->
   <div id="hero">
     <div id="hero-content">
-     <!--    <img src="nodex_logo.png" alt="Nodex Systems Logo" /> -->
       <h1>Structured Cabling & Data Infrastructure</h1>
       <p>Reliable, clean, and scalable network installations.</p>
     </div>
@@ -515,7 +514,7 @@ section {
   <!-- Navigation -->
  <nav>
   <div class="nav-container" style="position: relative;">
-    <button id="menu-toggle" class="menu-icon">☰</button>
+    <button id="menu-toggle" class="menu-icon" aria-label="Open menu">☰</button>
 
     
 
@@ -597,7 +596,7 @@ section {
       <p>Neat, labeled, and efficient cable routing and organization for easy maintenance.</p>
     </div>
     <div class="service-card">
-      <h3>Structured Cabling</h3>
+      <h3>Building Cabling</h3>
       <p>Horizontal and vertical cabling for commercial buildings and enterprise networks.</p>
     </div>
     <div class="service-card">
@@ -611,7 +610,7 @@ section {
   </div>
 
  
-  <h2 style="font-size: 1.5rem; margin-top: 3rem; text-align: center; margin-bottom: 1rem; color: #1e3a8a;">Security Systems</h3>
+  <h2 style="font-size: 1.5rem; margin-top: 3rem; text-align: center; margin-bottom: 1rem; color: #1e3a8a;">Security Systems</h2>
   <div class="services-grid">
     <div class="service-card">
       <h3>Equipment Installation & Configuration</h3>
@@ -658,7 +657,7 @@ section {
 
 
 <section id="work" style="padding: 4rem 2rem; text-align: center;">
-<h2 class="section-title">Our Work/Prototypes</h2>
+<h2 class="section-title">Our Work</h2>
 
 
   <div id="gallery-buttons" style="margin: 2rem 0;">
@@ -669,33 +668,24 @@ section {
   <!-- Panel 1 -->
   <div id="dataCenterPanel" class="image-panel ">
     <div class="image-grid" >
-      <img src="datacenter1.PNG" onclick="openLightbox(this.src)" alt="">
-      <img src="datacenter2.PNG" onclick="openLightbox(this.src)" alt="">
-      <img src="datacenter3.PNG" onclick="openLightbox(this.src)" alt="">
-      <img src="datacenter4.PNG" onclick="openLightbox(this.src)" alt="">
-     <!--   <img src="datacenter6.JPEG" onclick="openLightbox(this.src)" alt="">
-      <img src="datacenter8.JPEG" onclick="openLightbox(this.src)" alt="">
-           <video controls style="width: 100%; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.12);">
-    <source src="DatacenterVid.mp4" type="video/mp4">
-  </video>
-      <img src="datacenter2.JPEG" onclick="openLightbox(this.src)" alt="">
-      <img src="datacenter9.jpeg" onclick="openLightbox(this.src)" alt="">
-      <img src="datacenter10.jpg" onclick="openLightbox(this.src)" alt="">
-      <img src="datacenter11.jpeg" onclick="openLightbox(this.src)" alt="">   -->
+      <img src="datacenter1.PNG" onclick="openLightbox(this.src)" alt="Organized fiber and copper cabling in a data center rack" loading="lazy">
+      <img src="datacenter2.PNG" onclick="openLightbox(this.src)" alt="Labeled patch panels in a server rack" loading="lazy">
+      <img src="datacenter3.PNG" onclick="openLightbox(this.src)" alt="Cable management in a data center installation" loading="lazy">
+      <img src="datacenter4.PNG" onclick="openLightbox(this.src)" alt="Completed data center rack installation" loading="lazy">
     </div>
   </div>
 
   <!-- Panel 2 -->
   <div id="securityPanel" class="image-panel" style="display: none;">
     <div class="image-grid">
-      <img src="security2.jpg" onclick="openLightbox(this.src)" alt="">
-      <img src="security3.jpg" onclick="openLightbox(this.src)" alt="">
-      <img src="security14.jpg" onclick="openLightbox(this.src)" alt="">
-      <img src="security5.jpg" onclick="openLightbox(this.src)" alt="">
-      <img src="security6.jpeg" onclick="openLightbox(this.src)" alt="">
-      <img src="security7.jpeg" onclick="openLightbox(this.src)" alt="">
-      <img src="security12.jpg" onclick="openLightbox(this.src)" alt="">
-      <img src="security13.jpeg" onclick="openLightbox(this.src)" alt="">
+      <img src="security2.jpg" onclick="openLightbox(this.src)" alt="Security camera installed on a commercial building" loading="lazy">
+      <img src="security3.jpg" onclick="openLightbox(this.src)" alt="CCTV camera mounted outdoors" loading="lazy">
+      <img src="security14.JPG" onclick="openLightbox(this.src)" alt="Security camera installation" loading="lazy">
+      <img src="security5.jpg" onclick="openLightbox(this.src)" alt="Network video recorder setup for a camera system" loading="lazy">
+      <img src="security6.jpeg" onclick="openLightbox(this.src)" alt="Indoor security camera installation" loading="lazy">
+      <img src="security7.jpeg" onclick="openLightbox(this.src)" alt="Security camera wiring and mounting" loading="lazy">
+      <img src="security12.jpg" onclick="openLightbox(this.src)" alt="Commercial security camera system" loading="lazy">
+      <img src="security13.jpeg" onclick="openLightbox(this.src)" alt="Completed security camera installation" loading="lazy">
 
     </div>
   </div>
@@ -703,10 +693,10 @@ section {
   <!-- Lightbox with Navigation -->
   <!-- Lightbox with Navigation -->
 <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
-  <button id="closeBtn" class="lightbox-close" onclick="closeLightbox(event)">×</button>
-  <button id="prevBtn" class="lightbox-nav" onclick="prevImage(event)">←</button>
+  <button id="closeBtn" class="lightbox-close" aria-label="Close" onclick="closeLightbox(event)">×</button>
+  <button id="prevBtn" class="lightbox-nav" aria-label="Previous photo" onclick="prevImage(event)">←</button>
   <img id="lightbox-img" src="" alt="Preview">
-  <button id="nextBtn" class="lightbox-nav" onclick="nextImage(event)">→</button>
+  <button id="nextBtn" class="lightbox-nav" aria-label="Next photo" onclick="nextImage(event)">→</button>
 </div>
 
 </section>
@@ -720,7 +710,7 @@ section {
     <h2 class="section-title">About Us</h2>
 
     <p style="font-size: 1.2rem; color: #333; line-height: 1.9; margin-bottom: 2rem;">
-      At NodeX Systems, we are dedicated to delivering world-class network infrastructure and structured cabling solutions tailored for modern data centers and enterprise environments. Our expertise lies in designing, installing, and maintaining high-performance connectivity systems that are scalable, reliable, and built to meet the demands of today’s digital landscape.
+      At Nodex Systems, we are dedicated to delivering world-class network infrastructure and structured cabling solutions tailored for modern data centers and enterprise environments. Our expertise lies in designing, installing, and maintaining high-performance connectivity systems that are scalable, reliable, and built to meet the demands of today’s digital landscape.
     </p>
     <p style="font-size: 1.2rem; color: #333; line-height: 1.9; margin-bottom: 2rem;">
       With a deep understanding of data center architecture — including spine-leaf topologies, core network infrastructure, and high-density fiber management — our team ensures every project is executed with precision and adherence to the highest industry standards. From new installations to complex retrofits, we provide seamless solutions that support uninterrupted operations and long-term growth.
@@ -728,7 +718,7 @@ section {
 
    
     <p style="font-size: 1.2rem; color: #333; line-height: 1.9; margin-top: 2rem;">
-      We pride ourselves on craftsmanship, attention to detail, and delivering infrastructure that supports performance, uptime, and operational efficiency. At NodeX Systems, we don’t just connect cables — we build the foundation for your business’s success.
+      We pride ourselves on craftsmanship, attention to detail, and delivering infrastructure that supports performance, uptime, and operational efficiency. At Nodex Systems, we don’t just connect cables — we build the foundation for your business’s success.
     </p>
   </div>
 </section>
@@ -895,9 +885,6 @@ section {
   });
 </script>
 
-<script type="application/ld+json">
-
-</script>
 
 
 
